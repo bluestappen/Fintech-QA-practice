@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock Fintech App</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <h1>Mock Fintech App</h1>
+      <p class="description">
+        This is a fictional fintech service created only for QA practice.
+      </p>
+    </section>
+
+    <section id="login-section" class="card">
+      <h2>Login</h2>
+
+      <label for="user-id">User ID</label>
+      <input
+        id="user-id"
+        data-testid="user-id-input"
+        type="text"
+        placeholder="user_standard"
+      />
+
+      <label for="password">Password</label>
+      <input
+        id="password"
+        data-testid="password-input"
+        type="password"
+        placeholder="password123"
+      />
+
+      <button id="login-button" data-testid="login-button">
+        Login
+      </button>
+
+      <p id="login-message" data-testid="login-message" class="message"></p>
+    </section>
+
+    <section id="dashboard-section" class="card hidden">
+      <h2>Account Dashboard</h2>
+
+      <p>
+        Logged in as:
+        <strong id="current-user" data-testid="current-user"></strong>
+      </p>
+
+      <p>
+        Account ID:
+        <strong id="account-id" data-testid="account-id"></strong>
+      </p>
+
+      <p>
+        Account Status:
+        <strong id="account-status" data-testid="account-status"></strong>
+      </p>
+
+      <p>
+        Balance:
+        <strong id="account-balance" data-testid="account-balance"></strong>
+      </p>
+
+      <button id="logout-button" data-testid="logout-button">
+        Logout
+      </button>
+    </section>
+
+    <section id="transfer-section" class="card hidden">
+      <h2>Money Transfer</h2>
+
+      <label for="receiver-account">Receiver Account</label>
+      <input
+        id="receiver-account"
+        data-testid="receiver-account-input"
+        type="text"
+        placeholder="ACC-004"
+      />
+
+      <label for="transfer-amount">Transfer Amount</label>
+      <input
+        id="transfer-amount"
+        data-testid="transfer-amount-input"
+        type="number"
+        placeholder="30000"
+      />
+
+      <button id="transfer-button" data-testid="transfer-button">
+        Submit Transfer
+      </button>
+
+      <p id="transfer-message" data-testid="transfer-message" class="message"></p>
+    </section>
+
+    <section id="history-section" class="card hidden">
+      <h2>Transaction History</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Receiver</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="transaction-history" data-testid="transaction-history">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
