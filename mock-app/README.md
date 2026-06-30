@@ -2,12 +2,14 @@
 
 ## Overview
 
-This directory defines the mock fintech service used as the test target for the Fintech QA Practice Portfolio.
+This repository is a personal QA practice portfolio created to demonstrate service QA thinking, test design, business logic validation, and basic test automation using mock financial service scenarios.
 
-This is not a real banking application.
-It is a simplified fictional service created only for QA practice.
+This is not a real company project.  
+It does not use real customer data, real banking systems, real securities trading systems, or confidential company information.
 
-The purpose of this mock app is to provide a clear requirement baseline for:
+The goal of this project is not to build a production-level financial application, but to show how QA can approach financial services from the perspectives of requirement analysis, risk-based testing, business logic validation, defect reporting, data validation, and automation.
+
+This project started with a simplified account transfer flow to practice financial data consistency, and is extended with mock investment order scenarios to better reflect securities service QA.
 
 * Test planning
 * Test scenario design
